@@ -1,8 +1,10 @@
 <?php
 
+namespace App\Math;
+
 class luaslingkaran{
     public const phi = 3.14;
-    public int $jari;
+    private int $jari;
 
     public function __construct($isiJari = 1){
         $this->jari = $isiJari;
@@ -16,10 +18,7 @@ class luaslingkaran{
         echo "ini dari static";
     }
     public function __destruct(){
-        echo"udah ah";
+        echo"udah ah cape";
     }
 }
 
-$lingkaran = new luaslingkaran(16);
-$lingkaran->tampil('roda');
- luaslingkaran::testing();
